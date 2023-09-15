@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class='rd-day-body trip-startDate trip-date end-of-month rd-day-selected'][@data-date='30092023']\"}\n  (Session info: chrome=116.0.5845.188)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF7819F52A2+57122]\n\t(No symbol) [0x00007FF78196EA92]\n\t(No symbol) [0x00007FF78183E3AB]\n\t(No symbol) [0x00007FF781877D3E]\n\t(No symbol) [0x00007FF781877E2C]\n\t(No symbol) [0x00007FF7818B0B67]\n\t(No symbol) [0x00007FF78189701F]\n\t(No symbol) [0x00007FF7818AEB82]\n\t(No symbol) [0x00007FF781896DB3]\n\t(No symbol) [0x00007FF78186D2B1]\n\t(No symbol) [0x00007FF78186E494]\n\tGetHandleVerifier [0x00007FF781C9EF82+2849794]\n\tGetHandleVerifier [0x00007FF781CF1D24+3189156]\n\tGetHandleVerifier [0x00007FF781CEACAF+3160367]\n\tGetHandleVerifier [0x00007FF781A86D06+653702]\n\t(No symbol) [0x00007FF78197A208]\n\t(No symbol) [0x00007FF7819762C4]\n\t(No symbol) [0x00007FF7819763F6]\n\t(No symbol) [0x00007FF7819667A3]\n\tBaseThreadInitThunk [0x00007FF8D0007614+20]\n\tRtlUserThreadStart [0x00007FF8D08626B1+33]\n"
+}

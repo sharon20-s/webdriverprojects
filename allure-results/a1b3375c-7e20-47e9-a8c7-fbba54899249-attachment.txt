@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@class='rd-day-body'][@data-date='12102023']"
+}

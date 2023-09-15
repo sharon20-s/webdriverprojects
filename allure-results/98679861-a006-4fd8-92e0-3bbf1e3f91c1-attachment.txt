@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//input[@class='c-input u-v-align-middle'][@placeholder='Enter city or airport']"
+}

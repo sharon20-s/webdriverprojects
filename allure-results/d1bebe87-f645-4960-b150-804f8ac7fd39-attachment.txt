@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@class='rd-day-body trip-startDate trip-date end-of-month rd-day-selected'][@data-date='30092023']"
+}

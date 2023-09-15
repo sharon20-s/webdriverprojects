@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@id='nav-link-accountList-nav-line-1']\"}\n  (Session info: chrome=116.0.5845.188)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF6377752A2+57122]\n\t(No symbol) [0x00007FF6376EEA92]\n\t(No symbol) [0x00007FF6375BE3AB]\n\t(No symbol) [0x00007FF6375F7D3E]\n\t(No symbol) [0x00007FF6375F7E2C]\n\t(No symbol) [0x00007FF637630B67]\n\t(No symbol) [0x00007FF63761701F]\n\t(No symbol) [0x00007FF63762EB82]\n\t(No symbol) [0x00007FF637616DB3]\n\t(No symbol) [0x00007FF6375ED2B1]\n\t(No symbol) [0x00007FF6375EE494]\n\tGetHandleVerifier [0x00007FF637A1EF82+2849794]\n\tGetHandleVerifier [0x00007FF637A71D24+3189156]\n\tGetHandleVerifier [0x00007FF637A6ACAF+3160367]\n\tGetHandleVerifier [0x00007FF637806D06+653702]\n\t(No symbol) [0x00007FF6376FA208]\n\t(No symbol) [0x00007FF6376F62C4]\n\t(No symbol) [0x00007FF6376F63F6]\n\t(No symbol) [0x00007FF6376E67A3]\n\tBaseThreadInitThunk [0x00007FFCC54C7614+20]\n\tRtlUserThreadStart [0x00007FFCC70A26B1+33]\n"
+}

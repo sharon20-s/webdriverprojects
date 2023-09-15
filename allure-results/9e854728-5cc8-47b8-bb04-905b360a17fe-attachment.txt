@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@class='c-input u-v-align-middle'][@placeholder='Depart'][@value='15 Sep, Fri']"
+}
