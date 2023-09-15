@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//form[@method='POST'][@action='varify.asp']//div[@class='descr']"
+}
