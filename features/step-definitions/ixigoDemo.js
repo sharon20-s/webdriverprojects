@@ -1,11 +1,11 @@
 //import { Given, When, Then } from '@cucumber/cucumber';
 const { Given, When, Then } = require('@wdio/cucumber-framework');
+//import { Key } from 'webdriverio'
 
 
 
 Given(/^user opens ixigo flight booking site$/, async() => {
     await browser.maximizeWindow();
-    //await browser.deleteCookies();
     browser.url('https://www.ixigo.com/');
     browser.pause(3000);
     
@@ -13,14 +13,20 @@ Given(/^user opens ixigo flight booking site$/, async() => {
 
 When(/^user enters the details of their preferred flight$/, async() => {
     //selecting departure city
-	
-    let dcity = await $("//*[@class='orgn u-ib u-v-align-bottom u-text-left']//input[@placeholder='Enter city or airport']");
-    await dcity.clearValue();  // to clear the default value that is written in the textfield
-    dcity.setValue("Delhi");
-    await browser.pause(2000);
 
-    await $("//*[@id='content']/div/div[1]/div[5]/div/div/div[1]/div/div[3]/div/div[1]").click();
-//selecting arrival city
+     // to clear any default value that is written in the textfield
+	await $("//div[@class='orgn u-ib u-v-align-bottom u-text-left']//div[@class='clear-input ixi-icon-cross']").click(); //clicks on the cross icon
+    await $("//*[@class='orgn u-ib u-v-align-bottom u-text-left']//input[@placeholder='Enter city or airport']").setValue("Delhi");
+
+
+   //handling automated suggestion here that you get after typing the name of the city
+
+    await browser.keys([Key.Ctrl, 'VK_DOWN']);
+    await browser.keys([Key.Ctrl,'VK_RETURN']);
+
+    //await $("//div[@class='result-row flight-airport u-box-result'][@data-acindex='0']").click();
+    //await $("//*[@id='content']/div/div[1]/div[5]/div/div/div[1]/div/div[3]/div/div[1]").click();
+    //selecting arrival city
 
     await $("//*[@class='dstn u-ib u-v-align-bottom u-text-left']//input[@placeholder='Enter city or airport']").setValue("Kochi");
     await browser.pause(2000);
