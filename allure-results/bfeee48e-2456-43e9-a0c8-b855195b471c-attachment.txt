@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@class='rd-day-body end-of-month']//div[@class='day has-info'][contains(text(),30)]"
+}

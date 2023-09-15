@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@class='counter-item u-text-center u-ib'][@data-val='2']"
+}
