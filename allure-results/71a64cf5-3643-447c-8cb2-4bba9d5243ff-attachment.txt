@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@class='label u-pos-rel u-ib u-v-align-top'][text()='Economy']"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//td[@class='rd-day-body'][@data-date='04102023']//div[contains(text(),'4')]"
+}
