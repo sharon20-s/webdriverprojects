@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='result-row flight-airport u-box-result'][@data-acindex='0']"
+}
