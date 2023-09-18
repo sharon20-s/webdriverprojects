@@ -26,7 +26,7 @@ When(/^user enters the details of their preferred flight$/, async() => {
 
     //await $("//div[@class='result-row flight-airport u-box-result'][@data-acindex='0']").click();
     await $("//*[@id='content']/div/div[1]/div[5]/div/div/div[1]/div/div[3]/div/div[1]").click();
-    
+
     //selecting arrival city
 
     await $("//*[@class='dstn u-ib u-v-align-bottom u-text-left']//input[@placeholder='Enter city or airport']").setValue("Kochi");
@@ -34,9 +34,9 @@ When(/^user enters the details of their preferred flight$/, async() => {
     await $("//*[@id='content']/div/div[1]/div[5]/div/div/div[3]/div/div[3]/div/div[1]").click();
 
     //choosing the departure date
-    await $("//*[@class='c-input u-v-align-middle'][@placeholder='Depart'][@value='16 Sep, Sat']").click();
+    await $("//*[@class='c-input u-v-align-middle'][@placeholder='Depart'][@value='17 Sep, Sun']").click();
     await $("//*[@class='rd-day-body end-of-month']//div[@class='day has-info'][contains(text(),30)]").click();
-   
+
 
     //choosing the arrival date
     

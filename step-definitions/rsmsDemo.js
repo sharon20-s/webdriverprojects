@@ -4,13 +4,14 @@ const { assert } = require('chai');
 
 Given(/^user navigates from rajagiritech home page to the student login page$/, async() => {
 	await browser.maximizeWindow();
-	browser.url('https://www.rajagiritech.ac.in/Home/Index.asp');
+	browser.url ('https://www.rajagiritech.ac.in/Home/Index.asp');
+    await $("//a[@href='https://www.rajagiritech.ac.in/stud/ktu/student/']").click();
+    await browser.switchWindow('https://www.rajagiritech.ac.in/stud/ktu/student/');
 });
 
 
 When(/^user enters (.*) and (.*)$/, async(username,password) => {
-    await $("//a[@href='https://www.rajagiritech.ac.in/stud/ktu/student/']").click();
-    await browser.switchWindow('https://www.rajagiritech.ac.in/stud/ktu/student/');
+    
     await $("//input[@name='Userid'][@class='ibox']").setValue(username);
 await $("//input[@name='Password'][@class='ibox']").setValue(password);	
 });
