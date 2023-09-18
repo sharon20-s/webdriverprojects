@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.rajagiritech.ac.in/stud/ktu/student/']\"}\n  (Session info: chrome=116.0.5845.188)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF7732152A2+57122]\n\t(No symbol) [0x00007FF77318EA92]\n\t(No symbol) [0x00007FF77305E3AB]\n\t(No symbol) [0x00007FF773097D3E]\n\t(No symbol) [0x00007FF773097E2C]\n\t(No symbol) [0x00007FF7730D0B67]\n\t(No symbol) [0x00007FF7730B701F]\n\t(No symbol) [0x00007FF7730CEB82]\n\t(No symbol) [0x00007FF7730B6DB3]\n\t(No symbol) [0x00007FF77308D2B1]\n\t(No symbol) [0x00007FF77308E494]\n\tGetHandleVerifier [0x00007FF7734BEF82+2849794]\n\tGetHandleVerifier [0x00007FF773511D24+3189156]\n\tGetHandleVerifier [0x00007FF77350ACAF+3160367]\n\tGetHandleVerifier [0x00007FF7732A6D06+653702]\n\t(No symbol) [0x00007FF77319A208]\n\t(No symbol) [0x00007FF7731962C4]\n\t(No symbol) [0x00007FF7731963F6]\n\t(No symbol) [0x00007FF7731867A3]\n\tBaseThreadInitThunk [0x00007FFB0AB77614+20]\n\tRtlUserThreadStart [0x00007FFB0AE626B1+33]\n"
+}
