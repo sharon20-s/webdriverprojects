@@ -1,0 +1,3 @@
+{
+  "url": "https://www.rajagiritech.ac.in/stud/ktu/student/"
+}
