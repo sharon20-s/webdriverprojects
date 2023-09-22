@@ -11,6 +11,8 @@ get passengerDetailsClick(){return $("//*[@class='c-input u-v-align-middle'][@id
 get numberOfPassengers(){return $("//*[@class='counter-item u-text-center u-ib'][@data-val='2']")};
 get travelStyle() {return $("//*[@class='label u-pos-rel u-ib u-v-align-top'][text()='Economy']")};
 get submit() {return $("//*[@class='search u-ib u-v-align-bottom']")};
+get sortByBanner(){return $("//div[@class='srt-lbl']")};
+get firstFlight(){return $("//div[@title='I51534, I51981'][@class='u-text-ellipsis']")};
 
 async open()
 {
