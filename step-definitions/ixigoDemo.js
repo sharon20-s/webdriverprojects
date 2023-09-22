@@ -1,63 +1,28 @@
-//import { Given, When, Then } from '@cucumber/cucumber';
+
 const { Given, When, Then } = require('@wdio/cucumber-framework');
-//import { Key } from 'webdriverio'
-
-
+const homePage = require ('../pageobjects/ixigoDemo.page.js');
 
 Given(/^user opens ixigo flight booking site$/, async() => {
     await browser.maximizeWindow();
-    browser.url('https://www.ixigo.com/');
+    await homePage.open();
     browser.pause(3000);
-    
 });
 
 When(/^user enters the details of their preferred flight$/, async() => {
     //selecting departure city
-
-     // to clear any default value that is written in the textfield
-	await $("//div[@class='orgn u-ib u-v-align-bottom u-text-left']//div[@class='clear-input ixi-icon-cross']").click(); //clicks on the cross icon
-    await $("//*[@class='orgn u-ib u-v-align-bottom u-text-left']//input[@placeholder='Enter city or airport']").setValue("Delhi");
-
-
-   //handling automated suggestion here that you get after typing the name of the city
-
-    // await browser.keys([Key.Ctrl, 'VK_DOWN']);
-    // await browser.keys([Key.Ctrl,'VK_RETURN']);
-
-    //await $("//div[@class='result-row flight-airport u-box-result'][@data-acindex='0']").click();
-    await $("//*[@id='content']/div/div[1]/div[5]/div/div/div[1]/div/div[3]/div/div[1]").click();
-
+	await homePage.clearDepField.click();
+    await homePage.enterDeptCity();
     //selecting arrival city
-
-    await $("//*[@class='dstn u-ib u-v-align-bottom u-text-left']//input[@placeholder='Enter city or airport']").setValue("Kochi");
+    await homePage.enterArrCity();
     await browser.pause(2000);
-    await $("//*[@id='content']/div/div[1]/div[5]/div/div/div[3]/div/div[3]/div/div[1]").click();
-
     //choosing the departure date
-    await $("//*[@class='c-input u-v-align-middle'][@placeholder='Depart'][@value='17 Sep, Sun']").click();
-    await $("//*[@class='rd-day-body end-of-month']//div[@class='day has-info'][contains(text(),30)]").click();
-
-
-    //choosing the arrival date
-    
-    //await $("//input[@class='c-input u-v-align-middle'][@placeholder='Return']").click();
-    //await $("//td[@class='rd-day-body'][@data-date='04102023']//div[contains(text(),'4')]").click();
-    //await $("/html/body/div[4]/div[2]/div[1]/table/tbody/tr[1]/td[4]/div[1]").click();
-
-
-    //choosing passenger details
-    await $("//*[@class='c-input u-v-align-middle'][@id='passenger-list']").click();
-    browser.pause(2000);
-    await $("//*[@class='counter-item u-text-center u-ib'][@data-val='2']").click();//check
-    await $("//*[@class='label u-pos-rel u-ib u-v-align-top'][text()='Economy']").click();
-
-    
-
+    await homePage.chooseDeptDate();
+    await homePage.passengerDetails();
 });
 
 When(/^submits that information$/, async() => {
 //clicks on search
-await $("//*[@class='search u-ib u-v-align-bottom']").click();
+await homePage.submitButton();
 });
 
 Then(/^user will get the flights with the given filters$/, async() => {

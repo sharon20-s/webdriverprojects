@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//span[@class='ant-input-affix-wrapper ant-input-affix-wrapper-lg']//input[@class='ant-input ant-input-lg'][@type='text']"
+}

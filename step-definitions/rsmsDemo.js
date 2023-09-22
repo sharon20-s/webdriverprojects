@@ -1,10 +1,5 @@
-//import { Given, When, Then } from '@cucumber/cucumber';
 const { Given, When, Then } = require('@wdio/cucumber-framework');
-//const { assert } = require('chai');
 const LoginPage = require ('../pageobjects/rsmsDemo.page.js');
-
-
-
 
 Given(/^user navigates from rajagiritech home page to the student login page$/, async() => {
 	await browser.maximizeWindow();
@@ -12,8 +7,6 @@ Given(/^user navigates from rajagiritech home page to the student login page$/, 
 });
 
 When(/^user enters (.*) and (.*)$/, async(username,password) => {
-    //await LoginPage.IntoLoginPage.click();
-   // await browser.switchWindow("//a[@href='https://www.rajagiritech.ac.in/stud/ktu/student/']");
     await LoginPage.login(username,password);
 
 });
@@ -31,7 +24,6 @@ Then(/^the user is logged into their account and (.*) is displayed$/, async(mess
     else
     {    
         return true;
-        //browser.close();
     }
 });
 
