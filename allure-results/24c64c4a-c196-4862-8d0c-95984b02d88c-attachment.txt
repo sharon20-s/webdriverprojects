@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='orgn u-ib u-v-align-bottom u-text-left']//div[@class='clear-input ixi-icon-cross']"
+}

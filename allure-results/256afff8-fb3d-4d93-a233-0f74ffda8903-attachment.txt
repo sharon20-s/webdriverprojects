@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@title='I51534, I51981'][@class='u-text-ellipsis']"
+}
