@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class='c-input u-v-align-middle'][@placeholder='Depart'][@value='22 Sep, Fri']\"}\n  (Session info: chrome=116.0.5845.188)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF61A4952A2+57122]\n\t(No symbol) [0x00007FF61A40EA92]\n\t(No symbol) [0x00007FF61A2DE3AB]\n\t(No symbol) [0x00007FF61A317D3E]\n\t(No symbol) [0x00007FF61A317E2C]\n\t(No symbol) [0x00007FF61A350B67]\n\t(No symbol) [0x00007FF61A33701F]\n\t(No symbol) [0x00007FF61A34EB82]\n\t(No symbol) [0x00007FF61A336DB3]\n\t(No symbol) [0x00007FF61A30D2B1]\n\t(No symbol) [0x00007FF61A30E494]\n\tGetHandleVerifier [0x00007FF61A73EF82+2849794]\n\tGetHandleVerifier [0x00007FF61A791D24+3189156]\n\tGetHandleVerifier [0x00007FF61A78ACAF+3160367]\n\tGetHandleVerifier [0x00007FF61A526D06+653702]\n\t(No symbol) [0x00007FF61A41A208]\n\t(No symbol) [0x00007FF61A4162C4]\n\t(No symbol) [0x00007FF61A4163F6]\n\t(No symbol) [0x00007FF61A4067A3]\n\tBaseThreadInitThunk [0x00007FFD79E87344+20]\n\tRtlUserThreadStart [0x00007FFD7A0426B1+33]\n"
+}

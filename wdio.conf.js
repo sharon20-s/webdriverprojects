@@ -22,7 +22,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/**/rsmsDemo.feature'
+        './features/**/ixigoDemo.feature'
     ],
     // Patterns to exclude.
     exclude: [
